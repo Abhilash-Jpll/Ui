@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Members</title>
+</head>
+<body>
+    
+    <h1 id="first" class="hdrTgs"> This is H1 Tag</h1>
+    <h2 id="two" class="hdrTgs"> This is H2 Tag
+        <p>This is Paragragh__1</p>
+        <p>This is Paragragh__2</p>
+        <div id="divOne">This is Div Tag__1</div>
+    </h2>
+
+    <div>This is Div Tag__3</div>
+    <div>This is Div Tag__4</div>
+
+    <a href="">myPage</a>
+    <script>
+
+// //**************************************************    DOM Methods************************* 
+
+//         //                                  document.getElementById("IdName");
+//         let byId = document.getElementById("first");
+//         console.log(byId);
+//         let nonId = document.getElementById("fir");
+//         console.log(nonId);     //  null
+
+
+// //                                 document.getElementsByClassName("ClassName");
+//         let byCls = document.getElementsByClassName("hdrTgs");
+//         console.log(byCls);     //  HTMLCollection(3)
+
+
+// //                                 document.getElementsByTagName("TagName");
+//         let byTagNm = document.getElementsByTagName("div");
+//         console.log(byTagNm);
+
+
+
+//  //                            document.querySelector("IdName/ClassName/TagName");       
+//         let byQrySltr_id = document.querySelector("#two");
+//         console.log(byQrySltr_id);
+
+//         let byQrySltr_cls = document.querySelector(".hdrTgs");
+//         console.log(byQrySltr_cls);
+//         let byQrySltr_tgNm = document.querySelectorAll("p");
+//         console.log(byQrySltr_tgNm);
+
+//  //                        document.querySelectorAll("IdName/ClassName/TagName");       
+//         let byQrySltrAll_cls = document.querySelectorAll(".hdrTgs");
+//         console.log(byQrySltrAll_cls);    //    NodeList(2) 
+//         let byQrySltrAll_tgNm = document.querySelectorAll("p");
+//         console.log(byQrySltrAll_tgNm);
+//         let byQrySltrAll_id = document.querySelectorAll("#divOne");
+//         console.log(byQrySltrAll_id); 
+
+
+
+// **************************************************    DOM Properties *************************
+
+console.log(document);
+console.log(document.head);
+console.log(document.title);
+console.log(document.body);
+
+console.log(document.links);
+
+// console.log(document.div);  //undefined
+// console.log(document.p);    //undefined
+
+    </script>
+</body>
+</html>

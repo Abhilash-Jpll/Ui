@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_Manipulations</title>
+</head>
+
+<body>
+
+    <div id="one">
+        <p id="rpl">This is Paragragh_1 in Division_1</p>
+        <p id="spl">This is Paragragh_2 in Division_1</p>
+    </div>
+
+    <div id="two">
+        <p>This is Paragragh_1 in Division_2</p>
+        <p>This is Paragragh_2 in Division_2</p>
+    </div>
+
+
+    <script>
+
+
+        // // console.log(one);
+        // // console.log(one.innerText);
+        // // console.log(one.innerHTML);
+
+
+                        // **************** Creating Element By DOM_Manipulation
+
+        let crtTg = document.createElement("h1"); 
+        // console.log(crtTg);     //<h1></h1>
+
+        // ************************   Adding created Element By DOM_Manipulation
+
+        console.log(crtTg);     //<h1>This is Header Tag</h1>
+        crtTg.innerText="This is Header Tag";
+
+        // crtTg.innerText="<p>This is Paragraph Tag</p>";
+        crtTg.innerHTML="<p>This is Paragraph Tag</p>";
+
+
+        // ****************************** Adding created Element By DOM_Manipulation
+
+        let parent1 = document.getElementById("one");
+        parent1.appendChild(crtTg);
+
+
+                // ************** Adding Element before a Particulare Element  By DOM_Manipulation
+
+        // let nwElmnt = document.createElement("span");
+        // nwElmnt.innerText ="This is Ex of Adding Element before a Particulare Element in Html";
+        // console.log(nwElmnt);
+
+        // let prnt = document.getElementById("one");
+        // console.log(prnt);
+        
+        // let crrntElmnt = document.getElementById("spl");
+        // console.log(crrntElmnt);
+        
+        // prnt.insertBefore(nwElmnt, crrntElmnt);
+        
+                    // *********************** Removing Element By DOM_Manipulation
+
+        // let prnt = document.getElementById("one");
+        // console.log(prnt);
+        // let crrntElmnt = document.getElementById("spl");
+        // console.log(crrntElmnt);
+
+        // // prnt.removeChild(crrntElmnt);
+        // crrntElmnt.remove();
+        
+
+        //             // *********************** Replacing Element By DOM_Manipulation
+        // let nwElmnt1 = document.createElement("h3");
+        // nwElmnt1.innerText="Replacing Element By DOM_Manipulation";
+
+        // let prnt1 = document.getElementById("one");
+        // let rplElmnt = document.getElementById("rpl");
+        // prnt1.replaceChild(nwElmnt1, rplElmnt);
+        
+
+
+
+
+
+    </script>
+</body>
+
+</html>

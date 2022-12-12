@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventHandiling_Demo</title>
+</head>
+
+<body>
+
+    <!-- 1> 
+        <button onclick="alert('Abhilash')">Showing Alert Box</button>
+    <!-- <button onclick="document.body.style.backgroundColor= 'red'">
+        Change BGColor
+    </button> 
+    <button onclick="chageBgAbhi()">Change BGColor</button>
+    <script>
+        function chageBgAbhi() {
+            document.body.style.backgroundColor = "lightgreen";
+        }
+    </script>  -->
+
+    <button id="b">Click To Change BG-Color</button>
+
+    <input type="text" id="fcs"><label for="">UName</label>
+    <script>
+        // let btn=document.getElementById("b");
+        // // btn.onclick = chageBgClrAbhi();
+        // btn.onclick = chageBgClrAbhi;
+        // function chageBgClrAbhi() {
+        //     document.body.style.backgroundColor = "yellow";
+        // }
+
+        // let btn=document.getElementById("b");
+        // btn.onclick = chageBgClrAbhi();
+        // btn.onclick = () => document.body.style.backgroundColor='red';
+
+        let btn = document.getElementById("b");
+        btn.onclick= () => {
+            let str = "0123456789abcdef";
+            let clr = "#";
+            for (let i = 1; i <= 6; i++) {
+                let rmdmNum = Math.floor(Math.random() * 9);
+                clr = clr + str[rmdmNum];
+            }
+            document.body.style.backgroundColor = clr;
+        };
+
+
+        // let btn = document.getElementById("b");
+        // function chageBgClrAbhi(evnt) {
+        //     console.log(evnt);
+        //     document.body.style.backgroundColor = "yellow";
+        // }
+        // btn.addEventListener('click', chageBgClrAbhi);
+
+
+        let fcsEx = document.getElementById("fcs");
+        fcsEx.addEventListener('focus', fcsExAbhi);
+        function fcsExAbhi(evnt) {
+            // console.log(this);
+            console.log(evnt);
+            fcsEx.style.backgroundColor = "lightGreen";
+        }
+
+        fcsEx.addEventListener('keyup', (e) => {
+            console.log(e);
+            if (e.key == 'a')
+                alert(" 'a' Not allowed");
+        });
+
+
+    </script>
+</body>
+
+</html>

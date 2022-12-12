@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "pid": 11,
+            "pname": "prod_1",
+            "pcost": 10000
+        },
+        {
+            "id": 2,
+            "pid": 22,
+            "pname": "prod_2",
+            "pcost": 20000
+        },
+        {
+            "id": 3,
+            "pid": 33,
+            "pname": "prod_3",
+            "pcost": 30000
+        },
+        {
+            "id": 4,
+            "pid": 44,
+            "pname": "prod_4",
+            "pcost": 40000
+        },
+        {
+            "pid": 211,
+            "pname": "prod_211",
+            "pcost": 10000,
+            "id": 122
+        }
+    ]
+}

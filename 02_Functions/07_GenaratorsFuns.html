@@ -1,0 +1,19 @@
+
+<script>
+function *fun_one() {
+    yield "abc";
+    yield 123;
+    yield "mno";
+    yield 102030;
+    yield "pqr";
+    yield 100020003000;
+    yield "xyz";
+}
+
+let cursor = fun_one();
+
+console.log(cursor); 
+console.log(cursor.next());           //   Object [Generator] {}
+
+
+</script>

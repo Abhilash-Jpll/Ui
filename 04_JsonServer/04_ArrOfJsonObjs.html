@@ -1,0 +1,34 @@
+<script>
+
+    let arr = [
+        { pid: 121, pname: 'prod_1', pcost: 10_000 }
+        , { pid: 131, pname: 'prod_2', pcost: 20_000 }
+        , { pid: 141, pname: 'prod_3', pcost: 30_000 }
+        , { pid: 151, pname: 'prod_4', pcost: 40_000 }
+    ];
+
+    document.write(`
+        <table align="center" border="3" cellpadding="10px" cellspacing="10px">
+            <thead>
+                <tr>
+                    <td>SNo</td>
+                    <td>Pid</td>
+                    <td>Pname</td>
+                    <td>Pcost</td>
+                </tr>
+            </thead>     
+    `);
+    arr.forEach((element, index) => {
+        document.write(`
+            <tbody>
+                <tr>
+                    <td>${index + 1}</td>
+                    <td>${element.pid}</td>
+                    <td>${element.pname}</td>
+                    <td>${element.pcost}</td>
+                </tr>
+        `);
+    });
+    document.write(`</tbody> </table>`);
+
+</script>

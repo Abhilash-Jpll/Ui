@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pass By Value Nd Pass By Reference</title>
+</head>
+
+<body>
+
+    <script>
+
+        // // Pass By Value <== Primitive Data types.
+        // let x = 10;
+        // // let x = "a";
+        // // let x = true;
+        // function test1(num) {
+        //     num = num + 1;
+        // }
+        // console.log("Before Calling 'x' value:" + x);
+        // test1(x);
+        // console.log("After Calling 'x' value:" + x);
+
+
+
+        // // Pass By Reference <== Special Data types(Arrays and Objects).
+        // let arr = [10];
+
+        // function test2(a) {
+        //     a[0] = a[0]+1;
+        // }
+        // console.log("Before Calling 'arr' value:" + arr[0]);
+        // test2(arr);
+        // console.log("After Calling 'arr' value:" + arr[0]);
+
+
+
+        let std = {name: "Abhi"};
+        function test3(emp) {
+            emp.name ="Abhilash";
+            console.log("Inside the Function:", emp);
+        }
+
+        console.log("Before Calling 'std' value:", std);
+        test3(std);
+        console.log("After Calling 'std' value:", std);
+
+    </script>
+
+
+</body>
+
+</html>

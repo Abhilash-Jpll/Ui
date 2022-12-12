@@ -1,0 +1,23 @@
+
+
+
+--------------------------------------------------------
+Uncaught ReferenceError: num is not defined
+
+
+
+--------------------------------------------------------
+restcountries.eu/rest/v2/all
+
+https://restcountries.com/#rest-countries
+
+http://countrylayer.com/
+
+
+JsonServer :
+npm install -g json-server at CMD
+3000
+json-server --watch 05_JsonServerEx.json
+json-server --watch 05_JsonServerEx.json
+
+Json Server Operations Website.

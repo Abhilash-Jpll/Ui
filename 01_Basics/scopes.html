@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables_Scopes</title>
+</head>
+
+<body>
+
+    <script>
+       
+    // //  Global Scope  
+    //    let g_var = 10;
+
+    // //  Local Scope
+    //     function sum( l_var1, l_var2 ) {
+    //         console.log("Local Variables sum is :"+ (l_var1 + l_var2));
+    //     }
+    //     sum(10, 20);
+
+    // //  Block Level Scope (ES6)
+    //     {
+    //         let b_var = 100;
+    //         console.log("Block Level Variable is :"+b_var);
+    //     }
+
+    //     console.log("Bcz of Global Scope, Global Variable is :" +g_var);
+
+       
+    //  Global Scope 
+    let g_var = 10;
+
+
+
+
+//  Local Scope
+    function sum( l_var1, l_var2 ) {
+        console.log("Global Variable power is :"+ (g_var ** g_var));
+    }
+    sum(10, 20);
+    // console.log("Local Variables sum is :"+ (l_var1 + l_var2));
+
+//  Block Level Scope (ES6)
+    {
+        let b_var = 100;
+    }
+
+    // console.log("Block Level Variable is :"+b_var);
+    console.log("Bcz of Global Scope, Global Variable is :" +g_var);
+
+    
+    {
+        var x =39;
+    }
+    console.log("Block Level Variable is :"+ x);
+    
+    </script>
+</body>
+
+</html>
+
+<!-- 
+        1> Global Scope<== Global Variable <== Acces anywhere  
+        2> Local Scope or Function Scope <== Local/Function Variable <== Acces within the Function only
+        3> Block Level Scope (ES6) <== Block Level Variable <== Acces within the Block only,
+            **>  but var type Variable NotRecommanded
+ -->

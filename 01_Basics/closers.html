@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closers_Demo</title>
+</head>
+<body>
+    
+    <script>
+
+        // function outerSum(arg1, arg2) {
+        //     document.write(arg1+arg2);
+
+        //     function innerPrintingArgOne(){
+        //         document.write(argument1);
+        //     }
+        // }
+        // sum(10, 20);
+        // document.write("<br>");
+        // innerPrintingArgOne();
+
+        // function outerSum(arg1, arg2) {
+            
+        //     let argument1 = arg1;
+        //     console.log(arg1+arg2);
+
+        //     function innerPrintingArgOne(){
+        //         console.log(argument1);
+        //     }
+
+        //     return innerPrintingArgOne;
+        // }
+        
+        // // outerSum(10, 20);
+        // outerSum(10, 20)();
+
+
+        function outer() {
+            
+            let x=100;
+
+            function innerPrintingVarOfOuterFun(){
+                console.log(x);
+            }
+
+            return innerPrintingVarOfOuterFun;
+        }
+        
+        // outer()();
+        let valOfXIs = outer();
+        valOfXIs();
+
+    </script>
+
+</body>
+</html>

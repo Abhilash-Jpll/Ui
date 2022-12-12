@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>console_object</title>
+</head>
+
+<body>
+    <script>
+        console.log("console.log_Ex...!");
+        console.info("console.info_Ex...!");
+        console.warn("console.warn_Ex...!");
+        console.error("console.error_Ex...!");
+        console.table([10, 20, 30, 40]);
+        console.table({key1: 10, key2: 20, key3: 30, key4: 40});
+        for(let i=1; i<=3; i++) {
+            console.count();                //  default: 1
+            console.count("count_Ex");      //  count_Ex: 1 
+        }
+        // console.clear();    //  Console was cleared
+
+        console.assert(10>11, "Flase Stmt_Abhi...!");
+        console.assert(10<11, "True Stmt_Abhi...!");
+    </script>
+</body>
+
+</html>

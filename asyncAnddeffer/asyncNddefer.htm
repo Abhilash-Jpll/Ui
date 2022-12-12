@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>asyncNddefer_Demo</title>
+
+<!--  
+    <script src="script1.js"></script>
+
+     <script async src="script1.js"></script>
+    <script async src="script2.js"></script> 
+
+D:\PracticeWorkSpac\React_Final\JavaScript\asyncAnddeffer\asyncNddeffer.htm
+
+-->
+    
+    <script defer src="script1.js"></script>
+
+
+</head>
+<body>
+    
+    <h1> async Nd defer Demo  Example</h1>
+    <!-- <script></script> -->
+</body>
+</html>
+
+<!-- 
+    1>  At Head Section :=
+        ----------------
+        -> Waiting time will be increased to parse Html file.
+        -> bcz, all script tags will be loaded in a specified order at head Section.
+
+    2> At End of Html :=
+       ---------------
+        -> Waiting time will be increased to download script file.
+
+    3> async Nd deffer :=
+    -------------------
+        -> llel ==> downloding script file + parsing Html file.
+        -> deffer ==> after downloding all script files then parsing Html file will be performed.
+        -> async  ==> after downloding all script files, exection of those will be performed irrespective of 
+            parsing Html file.
+    
+        -> In Real Time script files will be download from Companies Servers(3rd Party).
+ -->

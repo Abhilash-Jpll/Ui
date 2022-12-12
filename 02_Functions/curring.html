@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curring Demo</title>
+</head>
+
+<body>
+
+    <script>
+
+        // function sum(a, b, c, d) {
+        //     return a + b + c + d;
+        // }
+
+        // let result = sum(1, 2, 3, 4);
+        // console.log(result);
+
+        // console.log(sum(10, 20, 30, 40));
+
+
+        // Curring
+        // function sumCurring(a) {
+        //     return function (b) {
+        //         return function (c) {
+        //             return function (d) {
+        //                 return a + b + c + d;
+        //             }
+        //         }
+        //     }  
+        // }
+
+        // let resultCurring = sumCurring(1, 2, 3, 4);
+        // console.log(resultCurring);
+
+        // console.log(sumCurring(10, 20, 30, 40));
+
+        // let resultCurring = sumCurring(1);
+        // console.log(resultCurring(2));
+        // console.log(resultCurring(2)(3));
+        // console.log(resultCurring(2)(3)(4));
+        // // console.log(resultCurring(1)(2)(3)(4));
+        // // resultCurring(...)(...)(...) is not a function
+
+
+        // console.log(sumCurring(10));
+        // console.log(sumCurring(10)(20));
+        // console.log(sumCurring(10)(20)(30));
+        // console.log(sumCurring(10)(20)(30)(40));
+
+
+        // Adv Ex
+
+        function mulCurry(a) {
+            return function(b) {
+                return a*b;
+            }
+        }
+        
+        let mulCurryOfFive = mulCurry(5);
+        console.log(mulCurryOfFive(7));
+
+        let mulCurryOfSix = mulCurry(6);
+        console.log(mulCurryOfSix(7));
+
+        console.log(mulCurry(7)(3));
+       
+    </script>
+</body>
+
+</html>
